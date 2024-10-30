@@ -7,11 +7,12 @@
         <methods>
           <include name="configBC"/>
           <include name="configBS"/>
+          <include name="teContact"/>
           <include name="configAC"/>
           <include name="configAS"/>
           <include name="configAfterMethod"/>
           <include name="configBM"/>
-          <include name="reateOrganization"/>
+          <include name="contactTest2"/>
         </methods>
       </class> <!-- newproject.ContactTestScriptTest -->
     </classes>
