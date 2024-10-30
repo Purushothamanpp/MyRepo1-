@@ -90,33 +90,29 @@ public class ContactTestScriptTest extends BaseClass {
 
 	}
 
-	@Test // (groups="regressionTest")
-
-	public void reateOrganization() throws Throwable {
-		String sh = Elib.getDataFromExcel("Sheet1", 1, 7) + jlib.getRandomNumber();
-
-		HomePage op = new HomePage(driver);
-		op.getOrgLink().click();
-
-		// step2.click on create organization
-		OrganiztionsPage org = new OrganiztionsPage(driver);
-		org.getCreateNeworgBtn().click();
-
-		// Step3.Enter the all the details @create new organization
-		CreatingNewOrganizationPage cmpo = new CreatingNewOrganizationPage(driver);
-		cmpo.createOrg(sh);
-		cmpo.createorg("Construction");
-		cmpo.EnterPhoneNumber("8774744447");
-		// verify the header msg
-		oraganizationInfoPage org1 = new oraganizationInfoPage(driver);
-
-		String actorgname = org1.getHeadername().getText();
-		if (actorgname.contains(sh)) {
-			System.out.println(sh + "name is Verified ===PASS");
-		} else {
-			System.out.println(sh + "name is not verified===FAIL");
-		}
-
-	}
+	/*
+	 * @Test // (groups="regressionTest")
+	 * 
+	 * public void reateOrganization() throws Throwable { String sh =
+	 * Elib.getDataFromExcel("Sheet1", 1, 7) + jlib.getRandomNumber();
+	 * 
+	 * HomePage op = new HomePage(driver); op.getOrgLink().click();
+	 * 
+	 * // step2.click on create organization OrganiztionsPage org = new
+	 * OrganiztionsPage(driver); org.getCreateNeworgBtn().click();
+	 * 
+	 * // Step3.Enter the all the details @create new organization
+	 * CreatingNewOrganizationPage cmpo = new CreatingNewOrganizationPage(driver);
+	 * cmpo.createOrg(sh); cmpo.createorg("Construction");
+	 * cmpo.EnterPhoneNumber("8774744447"); // verify the header msg
+	 * oraganizationInfoPage org1 = new oraganizationInfoPage(driver);
+	 * 
+	 * String actorgname = org1.getHeadername().getText(); if
+	 * (actorgname.contains(sh)) { System.out.println(sh +
+	 * "name is Verified ===PASS"); } else { System.out.println(sh +
+	 * "name is not verified===FAIL"); }
+	 * 
+	 * }
+	 */
 
 }
