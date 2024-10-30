@@ -55,7 +55,12 @@
 </dependency>
 
 
-</dependencies>
+		<dependency>
+			<groupId>DataDrivenTesting</groupId>
+			<artifactId>DataDrivenTesting</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 <profiles>
 <profile>
 <id>smokeid</id>
